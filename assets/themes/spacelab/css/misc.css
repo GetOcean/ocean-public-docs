@@ -1,3 +1,14 @@
+#header .brand {
+  float: left;
+  width: 240px;
+  min-height: 80px;
+  border: 10px #0c9eef;
+  position: relative;
+  background:  #0c9eef url('../img/logo.png') no-repeat center;
+  background-size: 60%;
+}
+
+
 .panel-body h1 {
   padding: 30px 10px 24px 0px;
   line-height: 10px;

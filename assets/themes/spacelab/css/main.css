@@ -105,7 +105,7 @@ img {
   min-height: 80px;
   padding: 0 0 0 10px;
   position: relative;
-  background: #0c9eef url('/img/logo.png') no-repeat 25px 26px;
+  background: #0c9eef url('../img/logo.png') no-repeat 25px 26px;
 }
 #header .logo {
   color: #fff;
