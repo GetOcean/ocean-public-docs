@@ -8,6 +8,9 @@
   background-size: 60%;
 }
 
+.panel-body {
+    background-color: #fff;
+}
 
 .panel-body h1 {
   padding: 30px 10px 24px 0px;

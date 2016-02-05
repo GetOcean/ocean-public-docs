@@ -1,22 +1,9 @@
 ---
 layout: page
-title: Setup your Ocean over USB
+title: Setup your Ocean over USB on Linux
 group: navigation
-tagline:
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
-
-
-## Prerequisites on Mac OSX
-
-You need to install a terminal program, capable of communicating with a USB modem.  On Mac OSX, you can install the screen program using [Home Brew](https://brew.sh/):
-
-    brew install screen
-
-Once your've installed screen, ensure that it installed correctly:
-
-    $ which screen
-    /usr/bin/screen
 
 
 ## Prerequisites for Linux
@@ -32,23 +19,16 @@ On Fedora:
 There are also instruction on how to compile and install `screen`, directly from source, [here](http://www.linuxfromscratch.org/blfs/view/svn/general/screen.html).
 
 
-## 1. Power on the Ocean
+## 1. Power on the Ocean and connect the USB
 
 Hold the top button on the top panel of the Ocean, in the middle of the blue logo, for at least two seconds.  
 
-When the Ocean powers on, two red lights will begin glowing on the internal panel, and a green lightshow will begin at the bottom right hand corner of the case.
-
-
-## 2. Connect the USB cable
+When the Ocean powers on, two red lights will begin glowing on the internal panel, and a green lightshow will begin at the bottom right hand corner of the case.  The power button contains a small LED light that will glow white once the OS is ready to talk to your computer using the `screen` program.
 
 Plug the micro-USB connector to your Ocean, and then plug the standard USB connector to your computer.
 
 
-## 3. Wait for the power button to glow white
-
-The power button contains a small LED light that will glow once the OS is ready to talk to your computer using the `screen` program.
-
-## 4. Start the `screen` program
+## 2. Start the `screen` program
 
 We use the `screen` program to talk to the Ocean over a USB modem interface.  Type the following into your console to start `screen`:
 
@@ -67,7 +47,7 @@ Next, copy your preferred USB modem device name into the terminal prompt after `
 If you're not sure about the name of your USB modem.
 
 
-## 5. Start the Ocean login prompt
+## 3. Start the Ocean login prompt
 
 While in screen, type the following:
 
@@ -85,7 +65,7 @@ Two things will happen after this.  The power button light will change color, fr
 Note that every Ocean device has a unique name assigned to it.  `FineRock` is the name of the test device we used to create this document.  Your device will have a different name.
 
 
-## 6. Login to your Ocean
+## 4. Login to your Ocean
 
 The initial root login and password is as follows:
 
@@ -103,7 +83,7 @@ When you login with these entries, a setup program will run on the Ocean, prompt
     Password:
 
 
-## 7. Follow the steps in the setup program
+## 5. Follow the steps in the setup program
 
 When you login to your Ocean for the first time, a program will running asking you to change your root password, and optionally select a WiFi network to connect the Ocean to.  *Setting up WiFi network is strongly recommended!*
 
@@ -150,7 +130,7 @@ Finally, you'll receive a standard terminal prompt:
 
     root@FineRock:~#
 
-## 8. Exit setup mode
+## 6. Exit setup mode
 
 To exit setup mode, tap the power button again.  The power button light will disappear, and the Ocean will restart itself to complete the setup process.
 
