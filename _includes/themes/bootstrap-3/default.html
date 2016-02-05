@@ -11,15 +11,30 @@
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional theme -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Sticky Footer -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
-    
-    <!-- Custom styles -->
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Fonts from Font Awsome -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/font-awesome.min.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/animate.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/main.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/misc.css">
+    <!-- Vector Map  -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css">
+    <!-- ToDos  -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/todo/css/todos.css">
+    <!-- Morris  -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/morris/css/morris.css">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Feature detection -->
+    <script src="{{ ASSET_PATH }}/spacelab/js/modernizr-2.6.2.min.js"></script>
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,38 +58,48 @@
   </head>
 
   <body>
-    <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
-          <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+    <section id="container">
+        <header id="header">
+             <div class="brand">
+                <a href="/" class="logo"></a>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+            <div class="toggle-navigation toggle-left">
+                <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </header>
 
-      <div class="container">
-        {{ content }}
-      </div>
+        <aside class="sidebar">
+          <div id="leftside-navigation" class="nano">
+              <ul class="nano-content">
+                  <li><a href="/">Documentation Home</a></li>
+                  {% assign pages_list = site.pages %}
+                  {% assign group = 'navigation' %}
+                  {% include JB/pages_list %}
+              </ul>
+          </div>
+        </aside>
+
+        <section class="main-content-wrapper">
+            <section id="main-content">
+              <div class="row">
+                  <div class="col-md-12">
+                      <!--breadcrumbs start -->
+                      <ul class="breadcrumb">
+                          <li><a href="#">Dashboard</a>
+                          </li>
+                          <li class="active">Typography</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      {{ content }}
+                  </div>
+              </div>
+            </section>
+        </section>
 
     </div>
 
@@ -93,6 +118,6 @@
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/spacelab/plugins/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
