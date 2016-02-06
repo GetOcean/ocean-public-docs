@@ -6,6 +6,6 @@ Documentation for Ocean, deployed publicly to getocean.io
 Requires jekyll:
 
     gem install jekyll
-    jekyll serve
+    jekyll serve --baseurl ""
 
 Next, visit `http://localhost:4000` on your browser.

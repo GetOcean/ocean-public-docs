@@ -64,10 +64,10 @@
                 <a href="/" class="logo"></a>
             </div>
             <div class="toggle-navigation toggle-left">
-                <!--
+
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
                     <i class="fa fa-bars"></i>
-                </button>-->
+                </button>
             </div>
         </header>
 
@@ -75,12 +75,7 @@
           <div id="leftside-navigation" class="nano">
               <ul class="nano-content">
                   <li><a href="{{ site.baseurl }}/">Documentation Home</a></li>
-
-                  {% for my_page in site.pages %}
-                    {% if my_page.title %}
-                    <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-                    {% endif %}
-                  {% endfor %}
+                  <li><a href="{{ site.baseurl }}/setup-usb">Setup an Ocean over USB</a></li>
               </ul>
           </div>
         </aside>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Setup an Ocean over USB on OSX
+title: Ocean setup over USB on OSX
 group: navigation
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes, using USB on OSX.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
@@ -17,7 +17,7 @@ Once your've installed screen, ensure that it installed correctly:
     /usr/bin/screen
 
 
-## 1. Power on the Ocean
+## 1. Power on the Ocean and connect the USB
 
 {% include setup/power.md %}
 
