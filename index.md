@@ -1,13 +1,17 @@
 ---
 layout: page
-title: Ocean Docs
+title: Ocean Documentation
 group: navigation
 ---
 
-Ocean is a computer running the [Linux operating system](https://en.wikipedia.org/wiki/Linux).  The Ocean is set up to function like a traditional Linux server, in that you do not interact with the Ocean via a screen or mouse.  Instead, you connect to the device with a remote terminal over a network.
+From the Ocean home page:
 
-However, since our device does not contain a direct ethernet port, the method for doing this involves a USB connection.
+> Ocean is a mobile server, a device that combines the portability of a mobile phone with the flexibility of a Linux web server.
 
-- [Set up your Ocean using OSX]({{ site.baseurl }}/setup-usb-osx)
-- [Set up your Ocean using Linux]({{ site.baseurl }}/setup-usb-linux)
-- [Set up your Ocean using Windows]({{ site.baseurl }}/setup-usb-windows)
+This implies different setup, administration, and application development steps than you would get with other devices. This documentation web site provides all the information you need to get the most out of your Ocean.
+
+# Current guides
+
+### [Set up your Ocean over USB]({{ site.baseurl }}/setup-usb)
+
+Ocean does not have an ethernet port, nor a port for attaching a screen.  This section explains a method for setting up your Ocean with a standard micro-USB cable.
