@@ -61,4 +61,4 @@ If you're not sure about the name of your USB modem.
 
 # Next steps
 
-- [Use `ssh` to connect to your Ocean]({{ site.baseurl }}/connect-with-ssh).
+{% include setup/ssh.md %}

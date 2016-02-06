@@ -90,19 +90,6 @@ Note that every Ocean device has a unique name assigned to it. FineRock is the n
 {% include setup/exit.md %}
 
 
-## OSX: `screen` won't start
-
-Verify that your computer can detect the Ocean.  On your terminal, type the following:
-
-    ls /dev/tty.usbmodem*
-
-If your Ocean is powered on, you have a USB connection between the Ocean and your computer, and the USB cable is working correctly, you should see something like the following:
-
-    /dev/tty.usbmodem1411
-
-NOTE: if you have more than one Ocean, or more than one UBS modem device, attached to your computer, then you will obviously see more than one listing!
-
-
 # Next steps
 
-- [Use `ssh` to connect to your Ocean]({{ site.baseurl }}/connect-with-ssh).
+{% include setup/ssh.md %}

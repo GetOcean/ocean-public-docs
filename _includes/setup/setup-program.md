@@ -46,6 +46,8 @@ Once the connection has been established, you will see the following messages:
     Run 'wifi-setup start' at any time to setup another WiFi address.
     Enjoy using your Ocean :)
 
+_Make a note of your IP address above!_  You'll be using it to connect to your Ocean unit in a later step.
+
 Finally, you'll receive a standard terminal prompt:
 
     root@FineRock:~#
