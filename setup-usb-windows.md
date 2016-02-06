@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Setup your Ocean over USB on Windows
+title: Setup an Ocean over USB on Windows
 group: navigation
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes, using USB on Windows.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
+
+<h3>Under construction</h3>
 
 ## Prerequisites for Windows
 
@@ -51,4 +53,4 @@ NOTE: if you have more than one Ocean, or more than one UBS modem device, attach
 
 # Next steps
 
-- [Use `ssh` to connect to your Ocean](/connect-with-ssh).
+- [Use `ssh` to connect to your Ocean]({{ site.baseurl }}/connect-with-ssh).

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Setup your Ocean over USB on OSX
+title: Setup an Ocean over USB on OSX
 group: navigation
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes, using USB on OSX.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
@@ -57,7 +57,8 @@ If you're not sure about the name of your USB modem.
 {% include setup/exit.md %}
 
 
-## OSX: `screen` won't start
+
+## Troubleshooting: OSX: `screen` won't start
 
 Verify that your computer can detect the Ocean.  On your terminal, type the following:
 
@@ -72,4 +73,4 @@ NOTE: if you have more than one Ocean, or more than one UBS modem device, attach
 
 # Next steps
 
-- [Use `ssh` to connect to your Ocean](/connect-with-ssh).
+- [Use `ssh` to connect to your Ocean]({{ site.baseurl }}/connect-with-ssh).

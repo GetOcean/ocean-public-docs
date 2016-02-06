@@ -78,7 +78,7 @@ img {
    Layout
    ========================================================================== */
 #container {
-  width: 100%;
+  width: 75%;
   height: 100%;
   z-index: 0;
   -webkit-transition: all 0.3s ease-in-out;

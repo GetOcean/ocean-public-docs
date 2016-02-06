@@ -14,25 +14,25 @@
 
 
 
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Fonts from Font Awsome -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/css/font-awesome.min.css">
     <!-- CSS Animate -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/animate.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/css/animate.css">
     <!-- Custom styles for this theme -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/main.css">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/css/misc.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/css/misc.css">
     <!-- Vector Map  -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css">
     <!-- ToDos  -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/todo/css/todos.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/plugins/todo/css/todos.css">
     <!-- Morris  -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/spacelab/plugins/morris/css/morris.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/spacelab/plugins/morris/css/morris.css">
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->
-    <script src="{{ ASSET_PATH }}/spacelab/js/modernizr-2.6.2.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/themes/spacelab/js/modernizr-2.6.2.min.js"></script>
 
 
 
@@ -64,19 +64,23 @@
                 <a href="/" class="logo"></a>
             </div>
             <div class="toggle-navigation toggle-left">
+                <!--
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
                     <i class="fa fa-bars"></i>
-                </button>
+                </button>-->
             </div>
         </header>
 
         <aside class="sidebar">
           <div id="leftside-navigation" class="nano">
               <ul class="nano-content">
-                  <li><a href="/">Documentation Home</a></li>
-                  {% assign pages_list = site.pages %}
-                  {% assign group = 'navigation' %}
-                  {% include JB/pages_list %}
+                  <li><a href="{{ site.baseurl }}/">Documentation Home</a></li>
+
+                  {% for my_page in site.pages %}
+                    {% if my_page.title %}
+                    <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
               </ul>
           </div>
         </aside>
@@ -87,9 +91,9 @@
                   <div class="col-md-12">
                       <!--breadcrumbs start -->
                       <ul class="breadcrumb">
-                          <li><a href="#">Dashboard</a>
+                          <li><a href="{{ site.baseurl }}/">Ocean Docs</a>
                           </li>
-                          <li class="active">Typography</li>
+                          <li class="active">{{ page.title }}</li>
                       </ul>
                   </div>
               </div>
@@ -106,8 +110,6 @@
     <div id="footer">
       <div class="container">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>
       </div>
     </div>
@@ -117,7 +119,7 @@
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/spacelab/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/themes/spacelab/plugins/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Setup your Ocean over USB on Linux
+title: Ocean setup over USB on Linux
 group: navigation
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
@@ -61,4 +61,4 @@ If you're not sure about the name of your USB modem.
 
 # Next steps
 
-- [Use `ssh` to connect to your Ocean](/connect-with-ssh).
+- [Use `ssh` to connect to your Ocean]({{ site.baseurl }}/connect-with-ssh).
