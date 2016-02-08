@@ -10,6 +10,7 @@
 
 .panel-body {
     background-color: #fff;
+    padding: 30px;
 }
 
 .panel-body h1 {
@@ -25,4 +26,8 @@
   line-height: 10px;
   font-weight: 300;
   font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.h1 {
+    line-height: 36px;
 }

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ocean setup over USB on Linux
+title: Setup Ocean over USB on Linux
 group: navigation
 ---
 This aim of this guide is to help you set up a new Ocean in less than five minutes.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
@@ -25,21 +25,19 @@ There are also instruction on how to compile and install `screen`, directly from
 
 ## 2. Start the `screen` program
 
-We use the `screen` program to talk to the Ocean over a USB modem interface.  Type the following into your console to start `screen`:
+We use the previously installed `screen` program to talk to the Ocean over a USB modem interface.  `screen` is typically  used in the following way:
 
-    screen `ls /dev/tty.usbmodem*`
+    screen $DEVICE_NAME
+
+where `$DEVICE_NAME` is the name of the USB modem interface, as determined by the OS.  The name of the interface can have several different values, depending on your distribution.  On Ubuntu or Debian, the value will normally be something like `ttyACM0`.  Other distributions may have a value like `ttyUSB0`.
+
+Another way of determining the USB device name is to run `udevadm monitor`, and then plug in the Ocean device to the USB.
+
+Once you have determined the name of the Ocean modem interface, type the following into your console to start `screen`:
+
+    screen $DEVICE_NAME
 
 When screen starts, you will see a *blank screen*.  This is expected behavior!
-
-If you have more than one USB modem device connected, you need to find the device name of the USB modem running on the Ocean.  Type the following into the console:
-
-    ls /dev/tty.usbmodem*
-
-Next, copy your preferred USB modem device name into the terminal prompt after `screen`, for example:
-
-    screen /dev/tty.usbmodem1411
-
-If you're not sure about the name of your USB modem.
 
 
 ## 3. Start the Ocean login prompt

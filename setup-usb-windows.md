@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Setup an Ocean over USB on Windows
+title: Setup Ocean over USB on Windows
 group: navigation
 ---
-This aim of this guide is to help you set up a new Ocean in less than five minutes, using USB on Windows.  After working through this guide, your Ocean will be connected to your WiFi network, and you should be able to access it via `ssh`.
+Windows is slightly different beast to Linux and OSX in that there is less emphasis on command line interfaces for connecting and communicating with your Ocean.
 
-<h3>Under construction</h3>
 
 ## Prerequisites for Windows
 
