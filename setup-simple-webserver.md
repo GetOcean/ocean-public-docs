@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Setup a simple web server on your Ocean
+title: Setup a static web server on your Ocean
 group: navigation
 ---
 
 This is a very simple guide that will show you how to setup a simple static web server on your Ocean.
 
-## Install `http-server`
+## 1. Install `http-server`
 
 We are first going to install a Node-JS application called `http-server`.  This application can be used to set up and run a simple static web server from any folder.  Install it with the following command:
 
@@ -27,7 +27,7 @@ You should see output like the following:
     ├── portfinder@0.4.0 (async@0.9.0, mkdirp@0.5.1)
     └── ecstatic@0.7.6 (url-join@0.0.1, mime@1.3.4, minimist@1.2.0, he@0.5.0)
 
-## Create a simple HTML file and start a server
+## 2. Create a simple HTML file
 
 Next, create a separate folder somewhere with the following:
 
@@ -37,11 +37,13 @@ Then use the following command to create a very simple HTML file:
 
     $ echo "<h1>Hello World</h1>" > index.html
 
-Finally, run `http-server`
+## 3. Start the server
+
+Run `http-server` from the folder where you created the HTML file above.
 
     $ http-server
 
-You should see output like the following:
+You should see output, similar to the following:
 
     Starting up http-server, serving ./
     Available on:
@@ -51,8 +53,12 @@ You should see output like the following:
 
 That's it, now your web server is running!
 
-## Visit the site in a browser
+## 4. Visit the site in a browser
 
-Enter the URL `http://10.0.27.116:8080` in a browser running on the same wireless network as your Ocean:
+The [IP address](https://en.wikipedia.org/wiki/IP_address) of your Ocean was printed out to the console when you started `http-server` in the previous step.  We want to type this IP address into a browser to view the site.  The IP address were are interested is the one that does not start with `127.0.0.1`, e.g.
+
+    10.0.27.116:8080
+
+If you type your IP into a browser, running on the same wireless network as your Ocean, you should be able to see your website:
 
 ![]({{ site.baseurl }}/assets/images/HelloWorld.png)

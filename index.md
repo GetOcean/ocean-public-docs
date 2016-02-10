@@ -4,19 +4,31 @@ title: Ocean Documentation
 group: navigation
 ---
 
-From the Ocean home page:
+Welcome to the Ocean documentation website!  This site contains a growing collection of guides and tutorials for setting up your Ocean and getting the most out of it.
 
-> Ocean is a mobile server, a device that combines the portability of a mobile phone with the flexibility of a Linux web server.
+# Getting Started
 
-This implies different setup, administration, and application development steps than you would get with other devices. This documentation web site provides all the information you need to get the most out of your Ocean.
-
-# Current guides
-
-### [Set up your Ocean over USB]({{ site.baseurl }}/setup-usb)
-
-Ocean does not have an ethernet port, nor a port for attaching a screen.  This section explains a method for setting up your Ocean with a standard micro-USB cable.
+{% include intro/getting-started.md %}
 
 
-### [Fix filesystem errors with fsck]({{ site.baseurl}}/fsck-disk)
+# Guides and Tutorials
+
+### Setup a Static Web Server
+
+It's very easy to set up a web server on your Ocean that can serve static HTML files.  This guide explains how to do it.
+
+- [Set up a static web server on your Ocean]({{ site.baseurl }}/setup-simple-webserver)
+
+
+### Add Another WiFi Network
+
+Coming soon!
+
+
+# Troubleshooting
+
+### Fix filesystem errors with fsck
 
 Most Linux distributions have a utility called `fsck` that can automatically fix many filesystem problems.  This section explains how to run `fsck` on your Ocean.
+
+- [Fix filesystem errors with fsck]({{ site.baseurl}}/fsck-disk)
