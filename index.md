@@ -15,3 +15,8 @@ This implies different setup, administration, and application development steps 
 ### [Set up your Ocean over USB]({{ site.baseurl }}/setup-usb)
 
 Ocean does not have an ethernet port, nor a port for attaching a screen.  This section explains a method for setting up your Ocean with a standard micro-USB cable.
+
+
+### [Fix (fsck) your disk]({{ site.baseurl}}/fsck-disk)
+
+If you are experiencing problem with the OS, you may want to run `fsck` on it and automatically fix all the problems. This section explains how you may do so.
