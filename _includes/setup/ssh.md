@@ -1,4 +1,6 @@
-At this point, you should be able to connect to your Ocean with the `ssh` program.  In another terminal window, type the following (replace the IP address with the IP address you were given by the Ocean WiFi setup program):
+If you've setup Wifi on you Ocean, you should be able to connect to your Ocean with the `ssh` program.  
+
+In another terminal window, type the following (replace the IP address with the IP address you were given by the Ocean WiFi setup program):
 
     ssh root@10.0.30.64
 

@@ -71,4 +71,4 @@ NOTE: if you have more than one Ocean, or more than one UBS modem device, attach
 
 # Next steps
 
-{% include setup/ssh.md %}
+[Connect to your Ocean with ssh]({{ site.baseurl }}/connect-with-ssh-osx)

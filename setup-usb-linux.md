@@ -59,4 +59,4 @@ When screen starts, you will see a *blank screen*.  This is expected behavior!
 
 # Next steps
 
-{% include setup/ssh.md %}
+[Connect to your Ocean with ssh]({{ site.baseurl }}/connect-with-ssh-linux)

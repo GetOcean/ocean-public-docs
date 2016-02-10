@@ -17,6 +17,6 @@ This implies different setup, administration, and application development steps 
 Ocean does not have an ethernet port, nor a port for attaching a screen.  This section explains a method for setting up your Ocean with a standard micro-USB cable.
 
 
-### [Fix (fsck) your disk]({{ site.baseurl}}/fsck-disk)
+### [Fix filesystem errors with fsck]({{ site.baseurl}}/fsck-disk)
 
-If you are experiencing problem with the OS, you may want to run `fsck` on it and automatically fix all the problems. This section explains how you may do so.
+Most Linux distributions have a utility called `fsck` that can automatically fix many filesystem problems.  This section explains how to run `fsck` on your Ocean.

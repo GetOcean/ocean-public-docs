@@ -91,4 +91,4 @@ Note that every Ocean device has a unique name assigned to it. FineRock is the n
 
 # Next steps
 
-{% include setup/ssh.md %}
+[Connect to your Ocean with ssh]({{ site.baseurl }}/connect-with-ssh-windows)
