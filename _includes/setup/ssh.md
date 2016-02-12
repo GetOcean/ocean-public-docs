@@ -1,4 +1,4 @@
-If you've setup Wifi on you Ocean, you should be able to connect to your Ocean with the `ssh` program.  
+If you've setup Wifi on your Ocean, you should be able to connect to your Ocean with the `ssh` program.  If you haven't already done so, [here are the instructions for setting up WiFi on your Ocean](https://getocean.io/docs/getting-started).
 
 In another terminal window, type the following (replace the IP address with the IP address you were given by the Ocean WiFi setup program):
 
