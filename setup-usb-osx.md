@@ -7,14 +7,7 @@ This aim of this guide is to help you set up a new Ocean in less than five minut
 
 ## Prerequisites on Mac OSX
 
-You need to install a terminal program, capable of communicating with a USB modem.  On Mac OSX, you can install the screen program using [Home Brew](https://brew.sh/):
-
-    brew install screen
-
-Once your've installed screen, ensure that it installed correctly:
-
-    $ which screen
-    /usr/bin/screen
+Make sure you've gone through the [Prerequisites for OSX]({{ site.baseurl }}/prerequisites-osx) before starting with this section.
 
 
 ## 1. Power on the Ocean and connect the USB
