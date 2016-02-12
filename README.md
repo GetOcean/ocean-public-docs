@@ -1,5 +1,6 @@
-# ocean-public-docs
-Documentation for Ocean, deployed publicly to getocean.io
+# Ocean Documentation
+
+This repository contains publicly available documentation for Ocean, currently deployed at https://getocean.io/docs/
 
 # Quick setup and run
 
