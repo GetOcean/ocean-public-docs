@@ -20,7 +20,7 @@ If not, use the following command to install the required packages via apt-get:
 
 If you're not sure if you have the required tools:
 
-    $ which screen && which ssh && which scp
+    $ which screen; which ssh; which scp
 
 You should get something to the following output if all of the required programs are installed:
 
