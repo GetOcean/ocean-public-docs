@@ -4,7 +4,7 @@
   min-height: 80px;
   border: 10px #0c9eef;
   position: relative;
-  background:  #0c9eef url('../img/logo.png') no-repeat center;
+  background:  #0c9eef url('../../images/logo.png') no-repeat center;
   background-size: 60%;
 }
 
