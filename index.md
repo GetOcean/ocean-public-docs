@@ -32,3 +32,16 @@ Coming soon!
 Most Linux distributions have a utility called `fsck` that can automatically fix many filesystem problems.  This section explains how to run `fsck` on your Ocean.
 
 - [Fix filesystem errors with fsck]({{ site.baseurl}}/fsck-disk)
+
+
+# Working on Ocean
+
+### Open source
+
+Our source code repositories are [available on github here](https://github.com/GetOcean).
+
+### About the Ocean OS
+
+All Oceans come pre-installed with a customized version of [Debian Jessie](https://www.debian.org/releases/stable/), using version 3.4.105 of the Linux kernel.
+
+- [About the kernel and pre-installed packages]({{ site.baseurl}}/ocean-os)
