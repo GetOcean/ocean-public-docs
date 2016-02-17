@@ -18,18 +18,23 @@ Make sure you've gone through the [Prerequisites for OSX]({{ site.baseurl }}/pre
 
 We use the `screen` program to talk to the Ocean over a USB modem interface.  Type the following into your console to start `screen`:
 
-    screen `ls /dev/tty.usbmodem*`
+```console
+$ screen `ls /dev/tty.usbmodem*`
+```
 
 When screen starts, you will see a *blank screen*.  This is expected behavior!
 
 If you have more than one USB modem device connected, you need to find the device name of the USB modem running on the Ocean.  Type the following into the console:
 
-    ls /dev/tty.usbmodem*
+```console
+$ ls /dev/tty.usbmodem*
+```
 
 Next, copy your preferred USB modem device name into the terminal prompt after `screen`, for example:
 
-    screen /dev/tty.usbmodem1411
-
+```console
+$ screen /dev/tty.usbmodem1411
+```
 
 ## 3. Start the Ocean login prompt
 
@@ -53,11 +58,15 @@ Next, copy your preferred USB modem device name into the terminal prompt after `
 
 Verify that your computer can detect the Ocean.  On your terminal, type the following:
 
-    ls /dev/tty.usbmodem*
+```console
+$ ls /dev/tty.usbmodem*
+```
 
 If your Ocean is powered on, you have a USB connection between the Ocean and your computer, and the USB cable is working correctly, you should see something like the following:
 
-    /dev/tty.usbmodem1411
+```console
+/dev/tty.usbmodem1411
+```
 
 NOTE: if you have more than one Ocean, or more than one UBS modem device, attached to your computer, then you will obviously see more than one listing!
 

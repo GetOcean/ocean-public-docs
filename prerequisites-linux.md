@@ -13,19 +13,24 @@ Almost all flavors of Ubuntu or Debian will have the tools required by default.
 
 If not, use the following command to install the required packages via apt-get:
 
-    apt-get install ssh screen minicom
-
+```console
+$ apt-get install ssh screen minicom
+```
 
 ## Checking for pre-installed programs
 
 If you're not sure if you have the required tools:
 
-    $ which screen; which ssh; which scp
+```console
+$ which screen; which ssh; which scp
+```
 
 You should get something to the following output if all of the required programs are installed:
 
-    /usr/bin/screen
-    /usr/bin/ssh
-    /usr/bin/scp
+```console
+/usr/bin/screen
+/usr/bin/ssh
+/usr/bin/scp
+```
 
 If you have got to this point, you should be ready to proceed to other sections in this document.

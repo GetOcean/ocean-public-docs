@@ -22,12 +22,18 @@ It's very easy to set up a web server on your Ocean that can serve static HTML f
 
 ### Add Another WiFi Network
 
-Coming soon!
+A wifi setup tool is already installed by default on all Oceans.
+
+- [Use `wifi-setup` to Add Another WiFi Network]({{ site.baseurl }}/wifi-setup-tool)
+
+You can also add WiFi networks manually by editing the `wpa_supplicant` config files.
+
+- [Add Another WiFi Network with `wpa_supplicant`]({{ site.baseurl }}/wifi-wpa-supplicant)
 
 
 # Troubleshooting
 
-### Fix filesystem errors with fsck
+### Fix Filesystem Errors with `fsck`
 
 Most Linux distributions have a utility called `fsck` that can automatically fix many filesystem problems.  This section explains how to run `fsck` on your Ocean.
 
@@ -36,7 +42,7 @@ Most Linux distributions have a utility called `fsck` that can automatically fix
 
 # Working on Ocean
 
-### Open source
+### Open Source
 
 Our source code repositories are [available on github here](https://github.com/GetOcean).
 
