@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Add Another WiFi Network with 'wpa_supplicant'
+title: Setup a WiFi Network with 'wpa_supplicant'
 group: navigation
 ---
 

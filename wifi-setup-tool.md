@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Add Another WiFi Network with 'wifi-setup'
+title: Setup a WiFi Network with 'wifi-setup'
 group: navigation
 ---
 
-`wifi-setup` is a command line tool you can use to easily add another WiFi network address and password to your Ocean.
+We have provided a command line tool called `wifi-setup`.  This tool allows you to easily add another WiFi network to your Ocean.
+
+The `wifi-setup` tool follows a question-and-answer format with minimal input, but we've provided a walk-through here to explain some of the different options available while using it.
 
 ## Walkthrough
 
@@ -24,7 +26,7 @@ This script will help you setup your WiFi credentials.
 Would you like to setup your WiFi? [Y/n]:
 ```
 
-Type `Y` to move to the next step, where available networks will automatically be scanned:
+Type `Y` to move to the next step, where available networks will automatically be scanned.
 
 ### Step 2: Choose a Network
 
