@@ -36,7 +36,7 @@ http-server@0.8.5 /usr/local/lib/node_modules/http-server
 Next, create a separate folder somewhere with the following:
 
 ```console
-$ mkdir simple-site && cd simple site
+$ mkdir simple-site && cd simple-site
 ```
 
 Then use the following command to create a very simple HTML file:

@@ -57,14 +57,16 @@ Once the connection has been established, you will see the following messages:
 
 ```console
 You have successfully connected to Network "Ocean Home".
-Your device's IP is 10.0.30.64 .
+Your device's IP is 10.0.30.64.
+To use ssh to connect your Ocean, type the following into another console:
+        ssh root@MeatyAlarm.local
 Run 'wifi-setup start' at any time to setup another WiFi address.
 Enjoy using your Ocean :)
 ```
 
-_Make a note of your IP address above!_  You'll be using it to connect to your Ocean unit in a later step.
+If possible, __make a note of your IP address above!__  You'll be using it to connect to your Ocean unit in a later step.
 
-Finally, you'll receive a standard terminal prompt:
+Finally, you'll receive a standard terminal prompt like the following:
 
 ```console
 root@FineRock:~#

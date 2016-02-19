@@ -10,51 +10,48 @@ This aim of this guide is to help you set up a new Ocean in less than five minut
 Make sure you've gone through the [Prerequisites for OSX]({{ site.baseurl }}/prerequisites-osx) before starting with this section.
 
 
-## 1. Power on the Ocean and connect the USB
+## Step 1. Power on the Ocean and connect the USB
 
 {% include setup/power.md %}
 
-## 2. Start the `screen` program
+## Step 2. Start the `screen` program
 
 We use the `screen` program to talk to the Ocean over a USB modem interface.  Type the following into your console to start `screen`:
 
 ```console
 $ screen `ls /dev/tty.usbmodem*`
 ```
+If you have trouble starting `screen` on OSX, [check the troubleshooting section](#trouble).
 
-When screen starts, you will see a *blank screen*.  This is expected behavior!
+<div class="alert alert-danger fade in">
+  <h4>IMPORTANT NOTE ABOUT SCREEN!</h4>
+  <p>When <code>screen</code> starts successfully, <strong>everything on your terminal window will disappear!</strong></p>
+  <p>This is expected behavior! Keep going!</p>
+</div>
 
-If you have more than one USB modem device connected, you need to find the device name of the USB modem running on the Ocean.  Type the following into the console:
 
-```console
-$ ls /dev/tty.usbmodem*
-```
-
-Next, copy your preferred USB modem device name into the terminal prompt after `screen`, for example:
-
-```console
-$ screen /dev/tty.usbmodem1411
-```
-
-## 3. Start the Ocean login prompt
+## Step 3. Start the Ocean console
 
 {% include setup/bypass.md %}
 
-## 4. Login to your Ocean
+## Step 4. Login to your Ocean
 
 {% include setup/login.md %}
 
-## 5. Follow the steps in the setup program
+## Step 5. Follow the steps in the setup program
 
 {% include setup/setup-program.md %}
 
-## 6. Exit setup mode
+## Step 6. Exit setup mode
 
 {% include setup/exit.md %}
 
 
+<a name="trouble"></a>
 
-## Troubleshooting: OSX: `screen` won't start
+# Troubleshooting
+
+## OSX: `screen` won't start
 
 Verify that your computer can detect the Ocean.  On your terminal, type the following:
 
@@ -68,7 +65,26 @@ If your Ocean is powered on, you have a USB connection between the Ocean and you
 /dev/tty.usbmodem1411
 ```
 
-NOTE: if you have more than one Ocean, or more than one UBS modem device, attached to your computer, then you will obviously see more than one listing!
+## OSX: `screen` starts, but it shows an error message and shuts down!
+
+There are two things to do in this situation:
+
+* Close your current console window and open another one.
+* Unplug the USB cable, and plug it back in again.
+
+## OSX: I have more than one USB modem device attached
+
+If you have more than one USB modem device connected, you need to find the device name of the USB modem running on the Ocean.  Type the following into the console:
+
+```console
+$ ls /dev/tty.usbmodem*
+```
+
+Next, copy your preferred USB modem device name into the terminal prompt after `screen`, for example:
+
+```console
+$ screen /dev/tty.usbmodem1412
+```
 
 
 # Next steps

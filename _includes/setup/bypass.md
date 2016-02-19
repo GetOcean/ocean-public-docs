@@ -1,13 +1,15 @@
 While in screen, type the following:
 
 ```console
-bypass
+console
 ```
 
-Two things will happen after this.  The power button light will change color, from white to blue.  Also, You should see standard linux login prompt:
+Two things will happen after this.  The power button light will change color, from white to blue.  
+
+After this, you should see standard linux login prompt:
 
 ```console
-$ bypass
+$ console
 ev s1
 
 Debian GNU/Linux 8 FineRock ttyS2
