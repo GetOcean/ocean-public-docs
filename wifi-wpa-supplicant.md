@@ -16,11 +16,11 @@ Use an editor to modify the file at the following location:
 /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-Next, copy and paste the following into your `wpa_supplicant.conf` file, replacing `SSID` with the full name of the network you wish to connect to, and `PASSWORD` with the password of the network:
+If you want to connect to a secured network with the WPA2 protocol, copy and paste the following into your `wpa_supplicant.conf` file, replacing `NAME-OF-YOUR-NETWORK` with the full name of the network you wish to connect to, and `PASSWORD` with the password of the network:
 
 ```kconfig
 network={
-    ssid="SSID"
+    ssid="NAME-OF-YOUR-NETWORK"
     psk="PASSWORD"
     proto=RSN
     key_mgmt=WPA-PSK
@@ -29,19 +29,20 @@ network={
 }
 ```
 
-The above settings will work best for networks using WPA2 security.  For different network settings, check the wpa_supplicant `man` page.
+To connect to an unsecured network, you can enter the following, again replacing `NAME-OF-YOUR-NETWORK` with the full name of the network you wish to connect to:
+
+```kconfig
+network={
+	ssid="NAME-OF-YOUR-NETWORK"
+	key_mgmt=NONE
+}
+```
+
+For different network settings, check the wpa_supplicant `man` page.
 
 ```console
 $ man wpa_supplicant
 ```
-
-SHORTCUT: In the following command, replace `SSID` with the full name of the network you wish to connect to, and `PASSWORD` with the password of the network:
-
-```console
-$ wpa_supplicant "SSID" "PASSWORD" >> /etc/wpa_supplicant/wpa_supplicant.conf
-```
-
-This will append the network info to the end of the `wpa_supplicant` configuration file.
 
 ### Step 2: Restart Networking
 
@@ -133,3 +134,13 @@ PING www.google.com (216.58.216.132) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% pack l loss, time 3005ms
 rtt min/avg/max/mdev = 20.168/21.519/23.750/1.361 ms
 ```
+
+## Tips and Tricks
+
+You can quickly append new networks to the `wpa_supplicant` file fairly easily with command line interface.  For example, in the following command, replace `SSID` with the full name of the network you wish to connect to, and `PASSWORD` with the password of the network:
+
+```console
+$ wpa_supplicant "SSID" "PASSWORD" >> /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+This will append the network info to the end of the `wpa_supplicant` configuration file.  You will need to restart networking once you've done this.
