@@ -13,10 +13,6 @@
     padding: 30px;
 }
 
-h1 .h1 {
-    line-height: 36px;
-}
-
 .panel-body h1 {
   line-height: 36px;
   font-weight: 350;
@@ -46,6 +42,17 @@ h1 .h1 {
     padding: 5px 0px 5px 0px;
   font-weight: 350;
   font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+h1.nobreak {
+    margin: 0;
+    padding: 0px 10px 20px 10px;
+    float: left;
+    line-height: 10px;
+    font-weight: 300;
+    font-size: 42px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    line-height: 36px;
 }
 
 pre {
