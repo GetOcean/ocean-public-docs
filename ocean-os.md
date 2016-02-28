@@ -5,6 +5,12 @@ group: navigation
 ---
 All Oceans come pre-installed with a customized version of [Debian Jessie](https://www.debian.org/releases/stable/), using version 3.4.105 of the Linux kernel.
 
+# Latest OS image
+
+[Download](https://s3.amazonaws.com/oceanosimages/bOS-2016-02-21--15fd0b44b3543d281b904c313ebd01ad814397ed.raw.tar.gz)
+
+MD5 Sum: `2492a056b88e7b2681e113f53dbdd0d6`
+
 # Kernel Source Code
 
 The kernel source we use is [available here on github](https://github.com/GetOcean/ocean-linux).

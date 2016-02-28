@@ -6,10 +6,21 @@ group: navigation
 
 Welcome to the Ocean documentation website!  This site contains a growing collection of guides and tutorials for setting up your Ocean and getting the most out of it.
 
+# Powering your Ocean
+
+<div class="alert alert-success fade in">
+  <h4>IMPORTANT: The GREEN LIGHTS are BATTERY INDICATORS ONLY!</h4>
+  <p>They will always glow <em>green</em> while your Ocean has battery power.</p>
+</div>
+
+To power __on__ your Ocean, __hold the central power button for at least two seconds__ until you see __red lights glowing__ from within the case.
+
+- [More information about powering your Ocean on and off]({{ site.baseurl }}/ocean-power)
+- [About the various LEDs on the Ocean, and what they mean]({{ site.baseurl }}/lights)
+
 # Getting Started
 
 {% include intro/getting-started.md %}
-
 
 # Guides and Tutorials
 

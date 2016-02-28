@@ -61,14 +61,14 @@ Press OK to close the window, and then press “Connect" on the *Quick Connectio
 
 ## 3. Start the Ocean login prompt
 
-Type `bypass` into the ZOC console, and you will see the following:
+Type `console` into the ZOC console, and you will see the following:
 
 ![Final config settings]({{ site.baseurl }}/assets/images/ConsoleConnected.PNG)
 
 Two things will happen after this. The power button light will change color, from white to blue. Also, You should see standard linux login prompt.
 
 ```console
-$ bypass
+$ console
 ev s1
 
 Debian GNU/Linux 8 FineRock ttyS2
