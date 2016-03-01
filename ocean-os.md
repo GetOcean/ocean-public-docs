@@ -7,7 +7,11 @@ All Oceans come pre-installed with a customized version of [Debian Jessie](https
 
 # Latest OS image
 
-Coming soon!
+The following image expands out to 16GB:
+
+[Download](https://s3.amazonaws.com/oceanosimages/16gbOceanOS.img.tar.gz)
+
+MD5 Sum: `c627e6b1c7dd69a56966a534de673615`
 
 # Kernel Source Code
 
