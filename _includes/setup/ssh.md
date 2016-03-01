@@ -26,3 +26,7 @@ root@FineRock:~#
 ```
 
 You now have console access to your Ocean on your wireless network.  Awesome!
+
+### IMPORTANT Secure Your Ocean!
+
+Once you have successfully connected to your Ocean via `ssh`, please [follow the instructions here for securing your Ocean]({{}}/securing-your-ocean).
