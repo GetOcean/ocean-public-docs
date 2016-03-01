@@ -16,12 +16,25 @@ Make sure you've gone through the [Prerequisites for OSX]({{ site.baseurl }}/pre
 
 ## Step 2. Start the `screen` program
 
-We use the `screen` program to talk to the Ocean over a USB modem interface.  Type the following into your console to start `screen`:
+We use the `screen` program to talk to the Ocean over a USB modem interface.  `screen` use a device name to connect to the device, but we first have to find the name of the device.  Type the following into your console to find out what device to connect to:
 
 ```console
-$ screen `ls /dev/tty.usbmodem*`
+$ ls /dev/tty.usbmodem*
 ```
-If you have trouble starting `screen` on OSX, [check the troubleshooting section](#trouble).
+
+If your Ocean is connected, you should get something like the following.  This is the name of the device we'll use when starting `screen`:
+
+```console
+/dev/tty.usbmodem1421
+```
+
+Copy the device name, the paste it in the `screen` command like this:
+
+```console
+$ screen /dev/tty.usbmodem1421 115200
+```
+
+If you still have trouble starting `screen` on OSX, [check the troubleshooting section](#trouble).
 
 <div class="alert alert-danger fade in">
   <h4>IMPORTANT NOTE ABOUT SCREEN!</h4>
@@ -80,10 +93,12 @@ If you have more than one USB modem device connected, you need to find the devic
 $ ls /dev/tty.usbmodem*
 ```
 
+Disconnect your device, and re-run `ls /dev/tty.usbmodem*` to find the name of the device.  The device that connected should no longer show in the list.  You can then deduce the name of the device name to use with screen by disconnecting and reconnecting device while running `ls /dev/tty.usbmodem*` (if you know of a better way of doing this, [please let us know](mailto:davidp@icracked.com).
+
 Next, copy your preferred USB modem device name into the terminal prompt after `screen`, for example:
 
 ```console
-$ screen /dev/tty.usbmodem1412
+$ screen /dev/tty.usbmodem1412 115200
 ```
 
 
