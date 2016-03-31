@@ -22,3 +22,12 @@ A wifi setup tool is already installed by default on all Oceans.
 You can also add WiFi networks manually by editing the `wpa_supplicant` config files.
 
 - [Add Another WiFi Network with `wpa_supplicant`]({{ site.baseurl }}/wifi-wpa-supplicant)
+
+
+
+### Setting up Tunneling Localhost
+
+`surf` is a script to setup tunneling localhost so you can easily expose any localhost ports to the world. 
+
+- [Installing `surf` on Your Ocean]({{ sites.baseurl }}/install-surf)
+- [Using `surf`]({{ sites.baseurl }}/using-surf)

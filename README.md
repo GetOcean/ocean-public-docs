@@ -6,7 +6,12 @@ This repository contains publicly available documentation for Ocean, currently d
 
 Requires jekyll:
 
-    gem install jekyll
+    # Install prerequisites
+    gem install jekyll 
+    gem install redcarpet
+    gem install pygments.rb
+
+    # Run server
     jekyll serve --baseurl ""
 
 Next, visit `http://localhost:4000` on your browser.
